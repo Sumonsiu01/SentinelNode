@@ -30,7 +30,6 @@ def main() -> None:
 
         if allowed and action != "observe":
             action_start = time.perf_counter()
-            # All actions are simulated. No real host/container controls are called.
             action_result = {"success": True, "mode": "simulation", "action": action}
             recovery = recover_service(image_verified=True)
             action_result["recovery"] = recovery
