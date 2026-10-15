@@ -1,0 +1,12 @@
+{
+  "dry_run": true,
+  "allowed_actions": [
+    "observe",
+    "drain_traffic_simulated",
+    "isolate_container_simulated",
+    "restart_container_simulated"
+  ],
+  "require_health_check_before_restore": true,
+  "require_image_verification": true,
+  "max_actions_per_incident": 3
+}

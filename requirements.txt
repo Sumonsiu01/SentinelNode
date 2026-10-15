@@ -1,0 +1,6 @@
+# Core prototype uses Python standard library only.
+# Optional, add only when implementing these integrations:
+# langgraph
+# langchain-core
+# docker
+# psutil

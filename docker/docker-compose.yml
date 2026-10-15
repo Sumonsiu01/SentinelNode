@@ -1,0 +1,12 @@
+services:
+  sentinelnode-demo:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: sentinelnode-demo
+    read_only: true
+    tmpfs:
+      - /tmp
+    volumes:
+      - ../data:/app/data
+      - ../logs:/app/logs
